@@ -22,98 +22,143 @@ non_return_func("Jaket Jeans", "Jaket Hoodie", "Jaket Kulit")
 x = float(input('Pilih jenis jaket apa yang anda inginkan = '))
 
 if x ==1:
-    print('-----------------------------------------------------')
-    print('\nAnda telah memilih Jaket Jeans dengan harga Rp.350000\n')
-    print('-----------------------------------------------------')
+    print('------------------------------------------------------')
+    print('Anda telah memilih Jaket Jeans dengan harga Rp.350000')
+    print('------------------------------------------------------')
     print('Daftar ukuran jaket yang tersedia')
     print('1. M')
     print('2. L')
     print('3. XL')
     print('4. XXL')
-    y = float(input('Pilih ukuran jaket apa yang anda inginkan ='))
-    if y ==1:
-        print('-----------------------------------------------------')
-        print('\nAnda memilih ukuran M\n')
-        print('-----------------------------------------------------')
-    elif y ==2:
-        print('-----------------------------------------------------')
-        print('\nMaaf stok ukuran yang anda pilih sudah habis\n')
-        print('-----------------------------------------------------')
-    elif y==3:
-        print('-----------------------------------------------------')
-        print('\nAnda memilih ukuran XL\n')
-        print('-----------------------------------------------------')
-    elif y==4:
-        print('\nAnda memilih ukuran XXL\n')
+    a = float(input('Pilih ukuran jaket apa yang anda inginkan ='))
+    if a ==1:
+        print('------------------------------------------------------')
+        print('Anda memilih ukuran M')
+        print('------------------------------------------------------')
+
+        j = int(input("Masukkan jumlah yang anda inginkan:"))
+        h = j*350000
+        print('------------------------------------------------------')
+        print("Anda telah membeli Jaket Jeans dengan ukuran M berjumlah",j, "\nAnda harus membayar sebesar: Rp.",h)
+        print('------------------------------------------------------')
+    elif a ==2:
+        print('------------------------------------------------------')
+        print('Maaf stok ukuran yang anda pilih sudah habis')
+        print('------------------------------------------------------')     
+    elif a ==3:
+        print('------------------------------------------------------')
+        print('Anda memilih ukuran XL')
+        print('------------------------------------------------------')
+
+        j = int(input("Masukkan jumlah yang anda inginkan:"))
+        h = j*350000
+        print('------------------------------------------------------')
+        print("Anda telah membeli Jaket Jeans dengan ukuran XL berjumlah",j, "\nAnda harus membayar sebesar: Rp.",h)
+        print('------------------------------------------------------')
+    elif a==4:
+        print('------------------------------------------------------')
+        print('Anda memilih ukuran XXL')
+        print('------------------------------------------------------')
+
+        j = int(input("Masukkan jumlah yang anda inginkan:"))
+        h = j*350000
+        print('------------------------------------------------------')
+        print("Anda telah membeli Jaket Jeans dengan ukuran XXL berjumlah",j, "\nAnda harus membayar sebesar: Rp.",h)
+        print('------------------------------------------------------')
     else:
-        item = ['\n''!!Anda telah memilih inputan yang salah!!','pilihan yang tersedia hanya:','1','2','3']
+        item = ['\n','!!Anda telah memilih inputan yang salah!!','pilihan yang tersedia hanya:','1','2','3']
+        for ukuran in item:
+            print(ukuran)   
+               
+elif x ==2:
+    print('------------------------------------------------------')
+    print('Anda telah memilih Jaket Hoodie dengan harga Rp.250000')
+    print('------------------------------------------------------')
+    print('Daftar ukuran jaket yang tersedia')
+    print('1. M')
+    print('2. L')
+    print('3. XL')
+    print('4. XXL')
+    b = float(input('Pilih ukuran jaket apa yang anda inginkan ='))
+    if b ==1:
+        print('-----------------------------------------------------')
+        print('Anda memilih ukuran M')
+        print('-----------------------------------------------------')
+
+        j = int(input("Masukkan jumlah yang anda inginkan:"))
+        h = j*250000
+        print('------------------------------------------------------')
+        print("Anda telah membeli Jaket Hoodie dengan ukuran M berjumlah",j, "\nAnda harus membayar sebesar: Rp.",h)
+        print('------------------------------------------------------')
+    elif b ==2:
+        print('------------------------------------------------------')
+        print('Maaf stok ukuran yang anda pilih sudah habis')
+        print('------------------------------------------------------')
+    elif b ==3:
+        print('------------------------------------------------------')
+        print('Anda memilih ukuran XL')
+        print('------------------------------------------------------')
+
+        j = int(input("Masukkan jumlah yang anda inginkan:"))
+        h = j*250000
+        print('------------------------------------------------------')
+        print("Anda telah membeli Jaket Hoodie dengan ukuran XL berjumlah",j, "\nAnda harus membayar sebesar: Rp.",h)
+        print('------------------------------------------------------')
+    elif b ==4:
+        print('------------------------------------------------------')
+        print('Anda memilih ukuran XXL')
+        print('------------------------------------------------------')
+
+        j = int(input("Masukkan jumlah yang anda inginkan:"))
+        h = j*250000
+        print('------------------------------------------------------')
+        print("Anda telah membeli Jaket Hoodie dengan ukuran XXL berjumlah",j, "\nAnda harus membayar sebesar: Rp.",h)
+        print('------------------------------------------------------')
+    else:
+        item = ['\n','!!Anda telah memilih inputan yang salah!!','pilihan yang tersedia hanya:','1','2','3']
         for ukuran in item:
             print(ukuran)
 
-elif x ==2:
-    print('-----------------------------------------------------')
-    print('\nAnda telah memilih Jaket Hoodie dengan harga Rp.250000\n')
-    print('-----------------------------------------------------')
-    print('Daftar ukuran jaket yang tersedia')
-    print('1. M')
-    print('2. L')
-    print('3. XL')
-    print('4. XXL')
-    y = float(input('Pilih ukuran jaket apa yang anda inginkan ='))
-    if y ==1:
-        print('-----------------------------------------------------')
-        print('\nAnda memilih ukuran M')
-        print('-----------------------------------------------------')
-    elif y ==2:
-        print('-----------------------------------------------------')
-        print('\nMaaf stok ukuran yang anda pilih sudah habis\n')
-        print('-----------------------------------------------------')
-    elif y==3:
-        print('-----------------------------------------------------')
-        print('\nAnda memilih ukuran XL\n')
-        print('-----------------------------------------------------')
-    elif y==4:
-        print('-----------------------------------------------------')
-        print('\nAnda memilih ukuran XXL\n')
-        print('-----------------------------------------------------')
-    else:
-        item = ['\n''!!Anda telah memilih inputan yang salah!!','pilihan yang tersedia hanya:','1','2','3']
-        for ukuran in item:
-            print(ukuran)
 elif x ==3:
     print('-----------------------------------------------------')
-    print('\nAnda telah memilih Jaket Kulit dengan harga Rp.450000\n')
+    print('Anda telah memilih Jaket Kulit dengan harga Rp.450000')
     print('-----------------------------------------------------')
     print('Daftar ukuran jaket yang tersedia')
     print('1. M')
     print('2. L')
     print('3. XL')
-    y = float(input('Pilih ukuran jaket apa yang anda inginkan ='))
-    if y ==1:
-        print('-----------------------------------------------------')
-        print('\nMaaf stok ukuran yang anda pilih sudah habis\n')
-        print('-----------------------------------------------------')
-    elif y ==2:
-        print('-----------------------------------------------------')
-        print('\nMaaf stok ukuran yang anda pilih sudah habis\n')
-        print('-----------------------------------------------------')
-    elif y==3:
-        print('-----------------------------------------------------')
-        print('\nAnda memilih ukuran XL\n')
-        print('-----------------------------------------------------')
+    c = float(input('Pilih ukuran jaket apa yang anda inginkan ='))
+    if c ==1:
+        print('------------------------------------------------------')
+        print('Maaf stok ukuran yang anda pilih sudah habis')
+        print('------------------------------------------------------')
+    elif c ==2:
+        print('------------------------------------------------------')
+        print('Maaf stok ukuran yang anda pilih sudah habis')
+        print('------------------------------------------------------')
+    elif c ==3:
+        print('------------------------------------------------------')
+        print('Anda memilih ukuran XL')
+        print('------------------------------------------------------')
+
+        j = int(input("Masukkan jumlah yang anda inginkan:"))
+        h = j*450000
+        print('------------------------------------------------------')
+        print("Anda telah membeli Jaket Kulit dengan ukuran XL berjumlah",j, "\nAnda harus membayar sebesar: Rp.",h)
+        print('------------------------------------------------------')
     else:
-        item = ['\n''!!Anda telah memilih inputan yang salah!!','pilihan yang tersedia hanya:','1','2','3']
+        item = ['\n','!!Anda telah memilih inputan yang salah!!','pilihan yang tersedia hanya:','1','2','3']
         for ukuran in item:
             print(ukuran)
+
 else:
     item = ['\n''!!Anda telah memilih inputan yang salah!!','pilihan yang tersedia hanya:','1','2','3']
     for jenis in item:
         print(jenis)
-        #pilihan ukuran
+        
+    
 
-
-
-
+print("\n--TERIMAKASIH SUDAH MENGUNJUNGI/MEMBELI DI TOKO KAMI--\n")
 
 
 
