@@ -156,10 +156,8 @@ else:
     for jenis in item:
         print(jenis)
         
-    
-
-print("\n--TERIMAKASIH SUDAH MENGUNJUNGI/MEMBELI DI TOKO KAMI--\n")
-
+        
+p1 = class1.Rawr(j,h)
 
 
 
